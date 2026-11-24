@@ -1,0 +1,43 @@
+Voili Server
+Copyright 2026 Hans-Dieter Zucht
+
+Licensed under the Apache License, Version 2.0 (see LICENSE). Under section 4(d)
+of that license, every redistribution of this work or of a derivative work must
+carry this NOTICE file. It names the author and the sources:
+
+Author
+  Hans-Dieter Zucht (GitHub @HDZucht), hd.zucht@googlemail.com,
+  https://github.com/HDZucht/voili-server
+  Code written with Claude Code (Aletheia, Claude Opus 5.5).
+
+Sources
+  Inworld Voice Isolator v1 (code and model weights, Apache-2.0),
+  Copyright 2026 Inworld AI, https://github.com/inworld-ai/voice-isolator ,
+  used unchanged as the Python package "inworld-voice-isolation"; weights are
+  downloaded at runtime from https://huggingface.co/inworld/voice-isolator .
+  Its own NOTICE credits the training datasets (VocalSet CC BY 4.0,
+  IndicVoices-R CC BY 4.0, VCTK ODC-By 1.0).
+
+  BlackHole (GPL-3.0, Existential Audio), https://github.com/ExistentialAudio/BlackHole ,
+  is a separate install and is not bundled.
+
+  Apple SoundAnalysis and Core Audio (macOS system frameworks).
+
+Mac Voili (macOS app, mac-voili/)
+  Re-implementation of the Inworld Voice Isolator v1 networks in Rust with Burn
+  (MIT OR Apache-2.0, https://github.com/tracel-ai/burn) on Metal. The Rust
+  crates compiled into the app and their license texts are listed in
+  THIRD-PARTY-LICENSES.txt inside the app (Contents/Resources).
+
+Effects (Mac Voili and Voili Server: reverb, width, treble)
+  Reverb: topology of Freeverb by Jezar at Dreampoint (public domain, 2000),
+  own code with per-comb decay from the reverb time, pre-delay and high-pass.
+  Width: principle of the binaural receiver (Rick Campbell, KK7B) as also used
+  by SDR Oxide ("Binaural", GPL-3.0); own code written from the principle,
+  no SDR Oxide source code is included.
+  Treble: high-shelf biquad after the Audio EQ Cookbook by Robert
+  Bristow-Johnson.
+
+Logo
+  assets/voili-logo.svg is an original drawing made for this project,
+  Copyright 2026 Hans-Dieter Zucht, under the same license.
