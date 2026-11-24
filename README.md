@@ -1,3 +1,10 @@
+---
+title: Mac Voili
+version: 0.1.17
+description: Voice isolation for noisy sound sources and SDR radio applications, macOS app for Apple silicon
+license: Apache-2.0
+---
+
 <p align="center"><img src="assets/voili-256.png" width="128" alt="Mac Voili"></p>
 
 # Mac Voili
