@@ -6,6 +6,8 @@ Auf Basis des [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-is
 
 **Download:** [neueste Release](https://github.com/HDZucht/mac-voili/releases/latest) (DMG) · **English:** [README.md](README.md)
 
+<p align="center"><img src="assets/mac-voili-0.1.16.png" width="520" alt="Mac-Voili-Fenster"></p>
+
 ## Wozu das Programm gut ist
 
 Mac Voili holt Stimmen aus verrauschtem Ton heraus, live und während du zuhörst. Das Programm hängt sich in den Systemton des Mac und lässt jeden Ton durch ein neuronales Netz laufen, das nur die menschliche Stimme behält: den Webbrowser mit KiwiSDR oder WebSDR, SDR-Programme wie SDR Oxide oder SDR++, Streams und Aufnahmen. Rauschen, Prasseln, Pfeifen, Träger, Interferenzen und Nachbarsender werden weitgehend entfernt.
@@ -18,6 +20,14 @@ Gedacht ist es für Funk, der sonst kaum anhörbar ist:
 - **Verrauschte Aufnahmen und Streams** jeder Art
 
 Das Netz ist der [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) von [Inworld AI](https://inworld.ai), quelloffen unter Apache-2.0 (Gewichte auf [Hugging Face](https://huggingface.co/inworld/voice-isolator), [Vorstellung](https://inworld.ai/blog/introducing-voice-isolator)). Mac Voili hat es in Rust für die Grafikeinheit des Mac nachgebaut, der Ton verlässt den Rechner nicht.
+
+## Einsatzbereich, z. B. SDR-Funk
+
+![SDR Oxide empfängt Mittelwelle AM](assets/sdr-oxide-mw-am.png)
+
+Mittelwelle AM am Abend: Lyca Radio 1458 kHz (London) in [SDR Oxide](https://github.com/dividebysandwich/sdroxide) mit einem SDRplay RSP1A, Synchron-AM (SAM), umgeben von BBC Radio 4, Radio Nippon und weiteren Sendern auf den Nachbarkanälen. Der Ton des Empfängers geht über BlackHole in Mac Voili. Die Einstellungen im Mac-Voili-Fenster oben sind die für diesen Sender: Qualität, Bandbreite 12 kHz, Automatisch, Sprachextraktion 90 % bei Sprache und 37 % bei Musik, Höhen bei Musik −30 dB, Breite 63 %, Hall 12 % bei 600 ms.
+
+Das geht mit jedem Programm, das auf dem Mac Ton ausgibt: KiwiSDR, WebSDR und UberSDR im Browser, SDR++, SDRconnect, Aufnahmen und Streams.
 
 ## Der wichtigste Kniff: Sprache und Musik verschieden einstellen
 

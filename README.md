@@ -13,6 +13,8 @@ license: Apache-2.0
 
 Powered by [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) from [Inworld AI](https://inworld.ai).
 
+<p align="center"><img src="assets/mac-voili-0.1.16.png" width="520" alt="Mac Voili window"></p>
+
 **Download:** [latest release](https://github.com/HDZucht/mac-voili/releases/latest) (DMG) · **Deutsch:** [ANLEITUNG.md](ANLEITUNG.md)
 
 ## Install
@@ -36,6 +38,14 @@ It is made for radio that is otherwise hard to listen to:
 - **Noisy recordings and streams** of any kind
 
 The network is [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) by [Inworld AI](https://inworld.ai), open source under Apache-2.0 (weights on [Hugging Face](https://huggingface.co/inworld/voice-isolator), [announcement](https://inworld.ai/blog/introducing-voice-isolator)). Mac Voili re-implements it in Rust for the Mac's GPU; the audio stays on the computer.
+
+## Application area, e.g. SDR radio
+
+![SDR Oxide receiving medium wave AM](assets/sdr-oxide-mw-am.png)
+
+Medium wave AM in the evening: Lyca Radio 1458 kHz (London) in [SDR Oxide](https://github.com/dividebysandwich/sdroxide) with an SDRplay RSP1A, synchronous AM (SAM), surrounded by BBC Radio 4, Radio Nippon and other stations on adjacent channels. The receiver's audio goes through BlackHole into Mac Voili. The settings in the Mac Voili window above are the ones for this station: Quality, bandwidth 12 kHz, Automatic, voice extraction 90 % for speech and 37 % for music, treble for music −30 dB, width 63 %, reverb 12 % at 600 ms.
+
+The same works with any program that plays audio on the Mac: KiwiSDR, WebSDR and UberSDR in the browser, SDR++, SDRconnect, recordings and streams.
 
 ## The key trick: set speech and music differently
 
