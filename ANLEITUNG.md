@@ -2,6 +2,8 @@
 
 **Stimmisolation für verrauschte Tonquellen und SDR-Funkanwendungen**
 
+Auf Basis des [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) von [Inworld AI](https://inworld.ai).
+
 **Download:** [neueste Release](https://github.com/HDZucht/mac-voili/releases/latest) (DMG) · **English:** [README.md](README.md)
 
 ## Wozu das Programm gut ist
@@ -15,7 +17,7 @@ Gedacht ist es für Funk, der sonst kaum anhörbar ist:
 - **Ferne Stationen über Web-SDR-Empfänger** (KiwiSDR, WebSDR, UberSDR)
 - **Verrauschte Aufnahmen und Streams** jeder Art
 
-Das Netz ist der Inworld Voice Isolator v1 (Apache-2.0). Es läuft auf der Grafikeinheit deines Mac, der Ton verlässt den Rechner nicht.
+Das Netz ist der [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) von [Inworld AI](https://inworld.ai), quelloffen unter Apache-2.0 (Gewichte auf [Hugging Face](https://huggingface.co/inworld/voice-isolator), [Vorstellung](https://inworld.ai/blog/introducing-voice-isolator)). Mac Voili hat es in Rust für die Grafikeinheit des Mac nachgebaut, der Ton verlässt den Rechner nicht.
 
 ## Der wichtigste Kniff: Sprache und Musik verschieden einstellen
 

@@ -11,6 +11,8 @@ license: Apache-2.0
 
 **Voice isolation for noisy sound sources and SDR radio applications** · macOS app for Apple silicon
 
+Powered by [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) from [Inworld AI](https://inworld.ai).
+
 **Download:** [latest release](https://github.com/HDZucht/mac-voili/releases/latest) (DMG) · **Deutsch:** [ANLEITUNG.md](ANLEITUNG.md)
 
 ## Install
@@ -33,7 +35,7 @@ It is made for radio that is otherwise hard to listen to:
 - **Distant stations through web SDR receivers** (KiwiSDR, WebSDR, UberSDR)
 - **Noisy recordings and streams** of any kind
 
-The network is Inworld Voice Isolator v1 (Apache-2.0). It runs on your Mac's GPU; the audio stays on the computer.
+The network is [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) by [Inworld AI](https://inworld.ai), open source under Apache-2.0 (weights on [Hugging Face](https://huggingface.co/inworld/voice-isolator), [announcement](https://inworld.ai/blog/introducing-voice-isolator)). Mac Voili re-implements it in Rust for the Mac's GPU; the audio stays on the computer.
 
 ## The key trick: set speech and music differently
 
@@ -86,7 +88,7 @@ The isolated radio voice is mono, dry and narrow-band, which is tiring over time
 
 ## License and sources
 
-Apache-2.0, see [LICENSE](LICENSE) and [NOTICE](NOTICE). Model: [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) (Apache-2.0), re-implemented in Rust with [Burn](https://github.com/tracel-ai/burn) on Metal. The licenses of all bundled Rust crates are in `THIRD-PARTY-LICENSES.txt` inside the app (Contents/Resources). The browser version is [Voili Server](https://github.com/HDZucht/voili-server).
+Apache-2.0, see [LICENSE](LICENSE) and [NOTICE](NOTICE). Model: [Inworld Voice Isolator v1](https://github.com/inworld-ai/voice-isolator) by [Inworld AI](https://inworld.ai) (Apache-2.0; weights on [Hugging Face](https://huggingface.co/inworld/voice-isolator), [announcement](https://inworld.ai/blog/introducing-voice-isolator)), re-implemented in Rust with [Burn](https://github.com/tracel-ai/burn) on Metal. The licenses of all bundled Rust crates are in `THIRD-PARTY-LICENSES.txt` inside the app (Contents/Resources). The browser version is [Voili Server](https://github.com/HDZucht/voili-server).
 
 ---
 
